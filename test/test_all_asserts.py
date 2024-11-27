@@ -31,8 +31,8 @@ class AllAssertsTests(unittest.TestCase):
             {1, 2, 3},
             {1, 2, 3}
         )
+    # Los decoracores son funcionalidades que nos permiten cambiar el corportamiento de una funcion o metodo
 
-    # los decoradores son funcionalidades que nos permiten cambiar el  comportamiento de un metodo o funcion
     @unittest.skip("Trabjo en progreso, será habilitada nuevamente")
     def test_skip(self):
         self.assertEqual("hola", "chao")

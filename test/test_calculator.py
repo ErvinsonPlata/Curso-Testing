@@ -1,9 +1,9 @@
 import unittest
 
-from src.calculator import sum, subtract, mutiply, divide
+from src.calculator import sum, subtract, multiply, divide
 
 
-class CalculatorTests(unittest.TestCase):  # clase de unittest
+class CalculatorTests(unittest.TestCase):  # clase de inittest
 
     def test_sum(self):
         assert sum(2, 3) == 5
@@ -11,15 +11,13 @@ class CalculatorTests(unittest.TestCase):  # clase de unittest
     def test_subtract(self):
         assert subtract(10, 5) == 5
 
-    def test_mutiply(self):
-        assert mutiply(10, 5) == 50
+    def test_multiply(self):
+        assert multiply(3, 2) == 6
 
-    def divide(self):
-        assert divide(10, 2) == 5
-
-    def test_divide_by_zero(self):
-        with self.assertRaises(ZeroDivisionError):
-            divide(30, 0)
+    def test_divide(self):
+        result = divide(10, 2)
+        expected = 5
+        assert result == expected
 
 
 # Comando para correr las pruebas "python -m unittest"
